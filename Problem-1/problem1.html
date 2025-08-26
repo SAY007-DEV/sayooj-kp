@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    input, select, button {
+      margin: 5px;
+      padding: 8px;
+      font-size: 16px;
+    }
+    #result {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Simple Calculator</h2>
+
+  <label>Number A: <input type="number" id="a" step="any"></label><br>
+  <label>Number B: <input type="number" id="b" step="any"></label><br>
+
+  <label>Operation:
+    <select id="operation">
+      <option value="add">Add</option>
+      <option value="subtract">Subtract</option>
+      <option value="multiply">Multiply</option>
+      <option value="divide">Divide</option>
+    </select>
+  </label><br>
+
+  <button onclick="performCalculation()">Calculate</button>
+
+  <div id="result"></div>
+
+  <script src="problem1.js">
+    
+  </script>
+</body>
+</html>
